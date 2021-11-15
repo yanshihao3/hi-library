@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Banner">
+        <attr name="autoPlay" format="boolean" />
+        <attr name="loop" format="boolean" />
+        <attr name="intervalTime" format="integer|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="NiceImageView">
+        <attr name="is_circle" format="boolean" />
+        <attr name="is_cover_src" format="boolean" />
+        <attr name="corner_radius" format="dimension" />
+        <attr name="corner_top_left_radius" format="dimension" />
+        <attr name="corner_top_right_radius" format="dimension" />
+        <attr name="corner_bottom_left_radius" format="dimension" />
+        <attr name="corner_bottom_right_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="inner_border_width" format="dimension" />
+        <attr name="inner_border_color" format="color" />
+        <attr name="mask_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CountDownView">
+        <!--颜色-->
+        <attr name="ringColor" format="color" />
+        <!-- 进度文本的字体大小 -->
+        <attr name="progressTextSize" format="dimension" />
+        <!-- 圆环宽度 -->
+        <attr name="ringWidth" format="float" />
+        <!--进度文本颜色-->
+        <attr name="progressTextColor" format="color" />
+        <!--倒计时-->
+        <attr name="countdownTime" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="HiSliderView">
+        <attr name="menuItemWidth" format="dimension" />
+        <attr name="menuItemHeight" format="dimension" />
+        <attr name="menuItemTextSize" format="dimension" />
+        <attr name="menuItemSelectTextSize" format="dimension" />
+        <attr name="menuItemIndicator" format="reference" />
+        <attr name="menuItemTextColor" format="reference" />
+        <attr name="menuItemBackgroundColor" format="color" />
+        <attr name="menuItemSelectBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="NavigationBar">
+        //按钮的大小颜色，使用iconfont
+        <attr name="text_btn_text_size" format="dimension" />
+        <attr name="text_btn_text_color" format="color" />
+        //标题大小的颜色，出现副标题 时 主标题的大小
+        <attr name="title_text_size" format="dimension" />
+        <attr name="title_text_size_with_subTitle" format="dimension" />
+        <attr name="title_text_color" format="color" />
+        //副标题的大小颜色
+        <attr name="subTitle_text_size" format="dimension" />
+        <attr name="subTitle_text_color" format="color" />
+        //按钮的横向内间距
+        <attr name="hor_padding" format="dimension" />
+        //返回按钮的iconfont 文本 主副标题文本
+        <attr name="nav_icon" format="string" />
+        <attr name="nav_title" format="string" />
+        <attr name="nav_subTitle" format="string" />
+        //底部线的颜色
+        <attr name="nav_line_color" format="color" />
+        <attr name="nav_line_height" format="dimension" />
+    </declare-styleable>
+
+    <attr name="hiNavigationStyle" format="reference" />
+
+    <style name="navigationStyle">
+        <item name="hor_padding">8dp</item>
+        <item name="nav_icon">&#xe607;</item>
+        <item name="text_btn_text_size">16sp</item>
+        <item name="text_btn_text_color">#666666</item>
+        <item name="title_text_size">18sp</item>
+        <item name="title_text_color">#000000</item>
+        <item name="subTitle_text_size">14sp</item>
+        <item name="title_text_size_with_subTitle">16sp</item>
+        <item name="subTitle_text_color">#717882</item>
+    </style>
+
+    <declare-styleable name="SearchView">
+        <attr name="search_background" format="reference" />
+        <attr name="search_icon" format="string|reference" />
+        <attr name="search_icon_size" format="dimension" />
+        <attr name="icon_padding" format="dimension" />
+
+        <attr name="clear_icon" format="string" />
+        <attr name="clear_icon_size" format="dimension" />
+
+        <attr name="hint_text" format="string" />
+        <attr name="hint_text_size" format="dimension" />
+        <attr name="hint_text_color" format="color" />
+        <attr name="hint_gravity" format="enum">
+            <enum name="hint_center" value="0" />
+            <enum name="hint_left" value="1" />
+        </attr>
+
+        <attr name="search_text_size" format="dimension" />
+        <attr name="search_text_color" format="color" />
+
+
+        <attr name="key_word_size" format="dimension" />
+        <attr name="key_word_color" format="color" />
+        <attr name="key_word_background" format="reference" />
+        <attr name="key_word_icon" format="string" />
+        <attr name="key_word_max_length" format="integer" />
+        <attr name="key_word_padding" format="dimension" />
+    </declare-styleable>
+
+    <attr name="hiSearchViewStyle" format="reference" />
+
+    <style name="searchViewStyle">
+        <item name="search_background">@drawable/shape_search_view</item>
+        <item name="icon_padding">10dp</item>
+        <item name="search_icon">&#xe987;</item>
+        <item name="search_icon_size">16sp</item>
+        <item name="clear_icon">&#xe60b;</item>
+        <item name="clear_icon_size">16sp</item>
+        <item name="hint_text_color">#888888</item>
+        <item name="hint_text_size">16sp</item>
+        <item name="hint_gravity">hint_center</item>
+
+        <item name="search_text_size">16sp</item>
+        <item name="search_text_color">#000000</item>
+
+        <item name="key_word_icon">&#xe611;</item>
+        <item name="key_word_color">#ffffff</item>
+        <item name="key_word_background">@drawable/shape_key_word</item>
+        <item name="key_word_size">14sp</item>
+        <item name="key_word_max_length">10</item>
+        <item name="key_word_padding">4dp</item>
+    </style>
+
+    <style name="AmountStyle">
+        <item name="btn_text_size">@dimen/font_14</item>
+        <item name="btn_color">#999999</item>
+        <item name="btn_size">25dp</item>
+        <item name="btn_background">#eeeeee</item>
+        <item name="btn_margin">5dp</item>
+
+        <item name="amount_text_size">16sp</item>
+        <item name="amount_color">#000000</item>
+        <item name="amount_size">@dimen/dp_30</item>
+        <item name="amount_background">@android:color/white</item>
+
+        <item name="value">1</item>
+        <item name="min_value">1</item>
+        <!--        <item name="max_value">1</item> //不配置，就是Int.max_value-->
+    </style>
+
+    <declare-styleable name="AmountView">
+        <attr name="btn_text_size" format="dimension" />
+        <attr name="btn_color" format="color" />
+        <attr name="btn_size" format="dimension" />
+        <attr name="btn_margin" format="dimension" />
+        <attr name="btn_background" format="color" />
+
+        <attr name="amount_text_size" format="dimension" />
+        <attr name="amount_color" format="color" />
+        <attr name="amount_size" format="dimension" />
+        <attr name="amount_background" format="color" />
+
+        <attr name="value" format="integer" />
+        <attr name="max_value" format="integer" />
+        <attr name="min_value" format="integer" />
+    </declare-styleable>
+
+</resources>
